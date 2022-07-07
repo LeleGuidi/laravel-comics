@@ -49,7 +49,7 @@
                 </nav>
             </div>
             <div class="col_right">
-                <img src="../../assets/img/dc-logo-bg.png" alt="logo dc">
+                <img src="{{asset('img/dc-logo-bg.png')}}" alt="logo dc">
             </div>
         </div>
     </div>
@@ -60,7 +60,11 @@
             </div>
             <div class="col_right">
                 <h3>Follow us</h3>
-                <a v-for="(social, index) in socials" :key="index" href="#/"><img :src="social.url" :alt="social.name"></a>
+                <a href="/#"><img src="{{asset('img/footer-facebook.png')}}" alt=""></a>
+                <a href="/#"><img src="{{asset('img/footer-twitter.png')}}" alt=""></a>
+                <a href="/#"><img src="{{asset('img/footer-youtube.png')}}" alt=""></a>
+                <a href="/#"><img src="{{asset('img/footer-pinterest.png')}}" alt=""></a>
+                <a href="/#"><img src="{{asset('img/footer-periscope.png')}}" alt=""></a>
             </div>
         </div>
     </div>
