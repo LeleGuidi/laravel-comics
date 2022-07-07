@@ -1,4 +1,10 @@
 <header class="header">
+    <div class="header_top">
+        <div class="header_top_container">
+            <a href="/#">dc power visa<i class="fa-regular fa-registered"></i></a>
+            <a href="/#">additional dc sites <i class="fa-solid fa-caret-down"></i></a>
+        </div>
+    </div>
     <div class="header_container">
         <div class="header_logo">
             <img src="{{asset('img/dc-logo.png')}}" alt="DC LOGO">
@@ -34,10 +40,13 @@
                         <a href="/#">News</a>
                     </li>
                     <li>
-                        <a href="/#">Shop</a>
+                        <a href="/#">Shop <i class="fa-solid fa-caret-down"></i></a>
                     </li>
                 </ul>
             </nav>
+        </div>
+        <div class="header_search">
+            <input type="text" placeholder="Search"><i class="fa-solid fa-magnifying-glass"></i>
         </div>
     </div>
 </header>

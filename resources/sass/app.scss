@@ -1,10 +1,12 @@
 @import './partials/_header.scss';
 @import './partials/_footer.scss';
 @import './partials/hero';
+@import './partials/reset';
+@import './partials/typography';
+@import './partials/variables';
+@import './partials/main';
+@import './partials/cards';
 
-* {
-    border: 0;
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
+
+
+
