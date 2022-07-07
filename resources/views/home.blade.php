@@ -4,9 +4,9 @@
     Home Page
 @endsection
 
-@section('style-css')
+{{-- @section('style-css')
     {{ asset('../sass/app.scss') }}
-@endsection
+@endsection --}}
 
 @section('main-content')
     CIAO
