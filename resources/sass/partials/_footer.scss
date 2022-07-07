@@ -1,40 +1,7 @@
 @import '../mixins/mixins.scss';
 .footer {
-
-    &_top{
-        
-        padding: 2.5rem;
-        background-color: var(--primary-color);
-
-        &_row {
-            @include flex ('between', 'center');
-            width: var(--container-lg);
-            margin: var(--margin-auto);
-            gap: 0.5rem;
-
-            .col {
-            width: calc(100% / 5 - 0.5rem);
-            color: var(--text-white);
-            text-transform: uppercase;
-            font-size: var(--font-sm);
-            text-align: center;
-
-                img {
-                    height: 3rem;
-                    vertical-align: middle;
-                    object-fit: contain;
-                    margin-right: 0.5rem;
-
-                    &:last-child {
-                        width: 3rem;
-                    }
-                }
-            }
-        }
-    }
-
     &_center {
-        background-image: url("../../assets/img/footer-bg.jpg");
+        background-image: url("../img/footer-bg.jpg");
         background-repeat: no-repeat;
         background-size: cover;
 
