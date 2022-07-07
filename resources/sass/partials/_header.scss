@@ -1,0 +1,39 @@
+@import '../mixins/mixins.scss';
+.header {
+    text-transform: uppercase;
+    &_container {
+        max-width: var(--container-lg);
+        @include flex ('between', 'center');
+        margin: var(--margin-auto);
+    }
+    &_logo {
+        margin: 0.8rem 0;
+        img {
+            width: 80px;
+            vertical-align: middle
+        }
+    }
+    &_nav{
+        ul {
+            @include listInLine;
+            li {
+                margin: 0 0.8rem;
+            }
+            .active {
+                border-bottom: 0.3rem solid var(--primary-color);
+            }
+            a {
+                display: inline-block;
+                text-decoration: none;
+                font-size: var(--font-sm);
+                font-weight: 500;
+                color: var(--secondary-color);
+                padding: 2.7rem 0
+                
+            }
+            .active a {
+                color: var(--primary-color);
+            }
+        }
+    }
+}
