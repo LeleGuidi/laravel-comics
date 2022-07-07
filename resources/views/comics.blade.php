@@ -5,7 +5,7 @@
 @endsection
 
 @section('main-content')
-<main class="main">
+<main class="cards">
     <section class="section_cards">
         <h1>current series</h1>
         <div class="row">
@@ -22,8 +22,8 @@
         </div>
         <button>load more</button>
     </section>
-    <div class="main_bottom">
-        <div class="main_bottom_row">
+    <div class="cards_bottom">
+        <div class="cards_bottom_row">
             @foreach ($contents as $content)
             <div class="col">
                 <img src="{{$content['url']}}" alt="{{$content['alt']}}">

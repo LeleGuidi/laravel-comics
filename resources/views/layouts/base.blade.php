@@ -11,9 +11,7 @@
 </head>
 <body>
     @include('partials.header')
-    <section class="section_hero">
-        <img src="{{asset('img/jumbotron.jpg')}}" alt="">
-    </section>
+    @include('partials.hero')
     @yield('main-content')
     @include('partials.footer')
 </body>

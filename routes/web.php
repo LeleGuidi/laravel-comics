@@ -20,3 +20,9 @@ Route::get('/', function () {
 
     return view('comics', compact('comics', 'contents'));
 });
+
+Route::get('/card', function () {
+    $comics = config('database.comics');
+    
+    return view('card', compact('comics'));
+});

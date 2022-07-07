@@ -1,26 +1,34 @@
 @import '../mixins/mixins.scss';
-.main {
-    background-color: #1c1c1c;
+.card {
+    background-color: white;
 
-.section_cards {
-    max-width: var(--container-lg);
-    margin: var(--margin-auto);
-    padding: 3.5rem 0 1rem 0;
+.section_card {
     text-transform: uppercase;
-    position: relative;
-    text-align: center;
 
-    h1 {
+    .top_card {
         background-color: var(--primary-color);
-        color: var(--text-white);
-        display: inline-block;
-        position: absolute;
-        top: -1.5rem;
-        left: -0.5rem;
-        padding: 0.8rem 1.5rem
-
-
+        width: 100%;
+        height: 4.375rem;
     }
+
+    .middle_card, .bottom_card {
+        max-width: var(--container-md);
+        margin: var(--margin-auto);
+    }
+
+    .middle_card {
+        img {
+            display: inline-block;
+            position: relative;
+            top: -19.75rem;
+            border: .125rem solid white
+        }
+    }
+    .bottom_card {
+        background-color: lightgray
+    }
+        
+    
 
     .row {
         @include flex('center', 'start');
