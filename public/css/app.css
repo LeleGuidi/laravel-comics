@@ -416,24 +416,68 @@ body {
 .main_card .section_card .bottom_card .container h4 {
   font-weight: 500;
   font-size: 1.2rem;
+  margin-bottom: 1.8rem;
 }
-.main_card .section_card .bottom_card .container .col.left {
+.main_card .section_card .bottom_card .container .col.left, .main_card .section_card .bottom_card .container .col.right {
   display: flex;
   flex-direction: column;
-  gap: 1.875rem;
 }
-.main_card .section_card .bottom_card .container .col.left .artby {
+.main_card .section_card .bottom_card .container .col.left .artby, .main_card .section_card .bottom_card .container .col.left .series, .main_card .section_card .bottom_card .container .col.right .artby, .main_card .section_card .bottom_card .container .col.right .series {
+  border-top: 0.0625rem solid #d8d8d8;
+}
+.main_card .section_card .bottom_card .container .col.left .artby, .main_card .section_card .bottom_card .container .col.left .writtenby, .main_card .section_card .bottom_card .container .col.left .series, .main_card .section_card .bottom_card .container .col.left .price, .main_card .section_card .bottom_card .container .col.left .sale, .main_card .section_card .bottom_card .container .col.right .artby, .main_card .section_card .bottom_card .container .col.right .writtenby, .main_card .section_card .bottom_card .container .col.right .series, .main_card .section_card .bottom_card .container .col.right .price, .main_card .section_card .bottom_card .container .col.right .sale {
   display: flex;
   justify-content: space-between;
   font-size: 0.8rem;
+  border-bottom: 0.0625rem solid #d8d8d8;
+  padding: 0.625rem 0;
 }
-.main_card .section_card .bottom_card .container .col.left .artby span {
+.main_card .section_card .bottom_card .container .col.left .artby span, .main_card .section_card .bottom_card .container .col.left .writtenby span, .main_card .section_card .bottom_card .container .col.left .series span, .main_card .section_card .bottom_card .container .col.left .price span, .main_card .section_card .bottom_card .container .col.left .sale span, .main_card .section_card .bottom_card .container .col.right .artby span, .main_card .section_card .bottom_card .container .col.right .writtenby span, .main_card .section_card .bottom_card .container .col.right .series span, .main_card .section_card .bottom_card .container .col.right .price span, .main_card .section_card .bottom_card .container .col.right .sale span {
   width: 30%;
+  color: #555555;
 }
-.main_card .section_card .bottom_card .container .col.left .artby p {
+.main_card .section_card .bottom_card .container .col.left .artby p, .main_card .section_card .bottom_card .container .col.left .writtenby p, .main_card .section_card .bottom_card .container .col.left .series p, .main_card .section_card .bottom_card .container .col.left .price p, .main_card .section_card .bottom_card .container .col.left .sale p, .main_card .section_card .bottom_card .container .col.right .artby p, .main_card .section_card .bottom_card .container .col.right .writtenby p, .main_card .section_card .bottom_card .container .col.right .series p, .main_card .section_card .bottom_card .container .col.right .price p, .main_card .section_card .bottom_card .container .col.right .sale p {
   width: 70%;
+  color: #555555;
 }
-.main_card .section_card .bottom_card .container .col.left .artby p a {
+.main_card .section_card .bottom_card .container .col.left .artby p a, .main_card .section_card .bottom_card .container .col.left .writtenby p a, .main_card .section_card .bottom_card .container .col.left .series p a, .main_card .section_card .bottom_card .container .col.left .price p a, .main_card .section_card .bottom_card .container .col.left .sale p a, .main_card .section_card .bottom_card .container .col.right .artby p a, .main_card .section_card .bottom_card .container .col.right .writtenby p a, .main_card .section_card .bottom_card .container .col.right .series p a, .main_card .section_card .bottom_card .container .col.right .price p a, .main_card .section_card .bottom_card .container .col.right .sale p a {
   color: #57a9d9;
   text-decoration: none;
+}
+.main_card .section_card .bottom_card .container .series a {
+  text-transform: uppercase;
+}
+.main_card .section_card .contents {
+  background-color: #f6f6f6;
+  border-top: 0.0625rem solid #d8d8d8;
+}
+.main_card .section_card .contents .container {
+  max-width: var(--container-md);
+  margin: var(--margin-auto);
+}
+.main_card .section_card .contents .container .row {
+  display: flex;
+  justify-content: center;
+  gap: 0.2rem #d8d8d8;
+}
+.main_card .section_card .contents .container .row .col {
+  width: 25%;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  color: #b5b5b5;
+  text-transform: uppercase;
+  padding: 0.625rem;
+  font-weight: 500;
+  font-size: 0.8rem;
+}
+.main_card .section_card .contents .container .row .col img {
+  width: 20%;
+}
+.main_card .section_card .contents .container .row .col:nth-child(odd) {
+  border-right: 0.0625rem solid #d8d8d8;
+  border-left: 0.0625rem solid #d8d8d8;
+}
+.main_card .section_card .contents .container .row .col:last-child {
+  border-right: 0.0625rem solid #d8d8d8;
 }

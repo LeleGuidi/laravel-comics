@@ -48,22 +48,53 @@
                             <span>Art by:</span>
                             <p>
                                 @foreach($comic['artists'] as $key => $artist) 
-                                <a href="/#">{{$artist}}</a>
-                                    @if ($key + 1 != count($comic['artists']))
-                                    ,
-                                    @endif
+                                    <a href="/#">{{$artist}}</a>@if ($key + 1 != count($comic['artists'])), @endif
                                 @endforeach
                             </p>
                         </div>
                         <div class="writtenby">
                             <span>Written by:</span>
+                            <p>
+                                @foreach($comic['writers'] as $key => $writer) 
+                                    <a href="/#">{{$writer}}</a>@if ($key + 1 != count($comic['writers'])), @endif
+                                @endforeach
+                            </p>
                         </div>
                     </div>
-                    <div class="col right"></div>
+                    <div class="col right">
+                        <h4>Specs</h4>
+                        <div class="series">
+                            <span>Series:</span>
+                            <p>
+                                <a href="/#">{{$comic['series']}}</a>
+                            </p>
+                        </div>
+                        <div class="price">
+                            <span>U.S. Price:</span>
+                            <p>{{$comic['price']}}</p>
+                        </div>
+                        <div class="sale">
+                            <span>On Sale Date:</span>
+                            <p>{{$comic['sale_date']}}</p> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="contents">
+            <div class="container">
+                <div class="row">
+                    @foreach ($contents as $key => $content)
+                        @if ($key + 1 != count($contents))
+                        <div class="col">
+                            {{$content['name']}}
+                            <img src="../{{$content['url']}}" alt="{{$content['alt']}}">
+                        </div>
+                        @endif
+                    @endforeach
                 </div>
             </div>
         </div>
     </section>
-
 </main>
 @endsection

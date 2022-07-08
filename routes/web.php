@@ -22,8 +22,9 @@ Route::get('/', function () {
 }) ->name('comics');
 
 Route::get('card/{id}', function ($id) {
+    $contents = config('database.contents');
     $comics = config('database.comics');
     $comic = $comics[$id];
 
-    return view('card', compact('comic'));
+    return view('card', compact('comic', 'contents'));
 })->name('card');
