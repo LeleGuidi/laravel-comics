@@ -9,15 +9,15 @@
     <section class="section_cards">
         <h1>current series</h1>
         <div class="row">
-            @foreach ($comics as $comic)
-                <div class="cards_list">
+            @foreach ($comics as $index => $comic )
+                <a class="cards_list" href="{{route('card', ['id' => $index])}}">
                     <div class="card">
                         <div class="card_img">
                             <img src="{{$comic['thumb']}}" alt="{{$comic['series']}}">
                         </div>
                         <h4>{{$comic['series']}}</h4>
                     </div>
-                </div>
+                </a>
             @endforeach
         </div>
         <button>load more</button>

@@ -12,34 +12,34 @@
         <div class="header_nav">
             <nav>
                 <ul>
-                    <li>
+                    <li class="{{Route::CurrentRouteName() == 'Characters' ? 'active' : ''}}">
                         <a href="/#">Characters</a>
                     </li>
-                    <li class="active">
+                    <li class="{{Route::CurrentRouteName() == 'Comics' ? 'active' : ''}}">
                         <a href="/#">Comics</a>
                     </li>
-                    <li>
+                    <li class="{{Route::CurrentRouteName() == 'Movies' ? 'active' : ''}}">
                         <a href="/#">Movies</a>
                     </li>
-                    <li>
+                    <li class="{{Route::CurrentRouteName() == 'TV' ? 'active' : ''}}">
                         <a href="/#">TV</a>
                     </li>
-                    <li>
+                    <li class="{{Route::CurrentRouteName() == 'Games' ? 'active' : ''}}">
                         <a href="/#">Games</a>
                     </li>
-                    <li>
+                    <li class="{{Route::CurrentRouteName() == 'Collectibles' ? 'active' : ''}}">
                         <a href="/#">Collectibles</a>
                     </li>
-                    <li>
+                    <li class="{{Route::CurrentRouteName() == 'Videos' ? 'active' : ''}}">
                         <a href="/#">Videos</a>
                     </li>
-                    <li>
+                    <li class="{{Route::CurrentRouteName() == 'Fans' ? 'active' : ''}}">
                         <a href="/#">Fans</a>
                     </li>
-                    <li>
+                    <li class="{{Route::CurrentRouteName() == 'News' ? 'active' : ''}}">
                         <a href="/#">News</a>
                     </li>
-                    <li>
+                    <li class="{{Route::CurrentRouteName() == 'Shop' ? 'active' : ''}}">
                         <a href="/#">Shop <i class="fa-solid fa-caret-down"></i></a>
                     </li>
                 </ul>

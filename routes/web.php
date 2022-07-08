@@ -19,10 +19,11 @@ Route::get('/', function () {
 
 
     return view('comics', compact('comics', 'contents'));
-});
+}) ->name('comics');
 
-Route::get('/card', function () {
+Route::get('card/{id}', function ($id) {
     $comics = config('database.comics');
-    
-    return view('card', compact('comics'));
-});
+    $comic = $comics[$id];
+
+    return view('card', compact('comic'));
+})->name('card');

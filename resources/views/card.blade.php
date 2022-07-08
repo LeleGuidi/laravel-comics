@@ -5,13 +5,13 @@
 @endsection
 
 @section('main-content')
-<main class="card">
+<main class="main_card">
     <section class="section_card">
         <div class="top_card">
 
         </div>
         <div class="middle_card">
-            <img src="{{$comics[0]['thumb']}}" alt="{{$comics[0]['series']}}">
+            <img src="{{$comic['thumb']}}" alt="{{$comic['series']}}">
         </div>
         <div class="bottom_card">
 
