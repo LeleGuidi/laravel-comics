@@ -472,7 +472,7 @@ body {
   font-size: 0.8rem;
 }
 .main_card .section_card .contents .container .row .col img {
-  width: 20%;
+  height: 50px;
 }
 .main_card .section_card .contents .container .row .col:nth-child(odd) {
   border-right: 0.0625rem solid #d8d8d8;

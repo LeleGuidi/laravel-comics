@@ -87,7 +87,7 @@
                     @foreach ($contents as $key => $content)
                         @if ($key + 1 != count($contents))
                         <div class="col">
-                            {{$content['name']}}
+                            <span>{{$content['name']}}</span>
                             <img src="../{{$content['url']}}" alt="{{$content['alt']}}">
                         </div>
                         @endif
