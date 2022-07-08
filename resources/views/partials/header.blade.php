@@ -12,34 +12,34 @@
         <div class="header_nav">
             <nav>
                 <ul>
-                    <li class="{{Route::CurrentRouteName() == 'Characters' ? 'active' : ''}}">
+                    <li class="{{Route::CurrentRouteName() == 'characters' ? 'active' : ''}}">
                         <a href="/#">Characters</a>
                     </li>
-                    <li class="{{Route::CurrentRouteName() == 'Comics' ? 'active' : ''}}">
+                    <li class="{{Route::CurrentRouteName() == 'comics' ? 'active' : ''}}">
                         <a href="/#">Comics</a>
                     </li>
-                    <li class="{{Route::CurrentRouteName() == 'Movies' ? 'active' : ''}}">
+                    <li class="{{Route::CurrentRouteName() == 'movies' ? 'active' : ''}}">
                         <a href="/#">Movies</a>
                     </li>
-                    <li class="{{Route::CurrentRouteName() == 'TV' ? 'active' : ''}}">
+                    <li class="{{Route::CurrentRouteName() == 'tv' ? 'active' : ''}}">
                         <a href="/#">TV</a>
                     </li>
-                    <li class="{{Route::CurrentRouteName() == 'Games' ? 'active' : ''}}">
+                    <li class="{{Route::CurrentRouteName() == 'games' ? 'active' : ''}}">
                         <a href="/#">Games</a>
                     </li>
-                    <li class="{{Route::CurrentRouteName() == 'Collectibles' ? 'active' : ''}}">
+                    <li class="{{Route::CurrentRouteName() == 'collectibles' ? 'active' : ''}}">
                         <a href="/#">Collectibles</a>
                     </li>
-                    <li class="{{Route::CurrentRouteName() == 'Videos' ? 'active' : ''}}">
+                    <li class="{{Route::CurrentRouteName() == 'videos' ? 'active' : ''}}">
                         <a href="/#">Videos</a>
                     </li>
-                    <li class="{{Route::CurrentRouteName() == 'Fans' ? 'active' : ''}}">
+                    <li class="{{Route::CurrentRouteName() == 'fans' ? 'active' : ''}}">
                         <a href="/#">Fans</a>
                     </li>
-                    <li class="{{Route::CurrentRouteName() == 'News' ? 'active' : ''}}">
+                    <li class="{{Route::CurrentRouteName() == 'news' ? 'active' : ''}}">
                         <a href="/#">News</a>
                     </li>
-                    <li class="{{Route::CurrentRouteName() == 'Shop' ? 'active' : ''}}">
+                    <li class="{{Route::CurrentRouteName() == 'shop' ? 'active' : ''}}">
                         <a href="/#">Shop <i class="fa-solid fa-caret-down"></i></a>
                     </li>
                 </ul>
